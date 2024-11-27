@@ -1,0 +1,107 @@
+/* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Calculator Container */
+.calculator {
+    background: #1e293b;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 350px;
+}
+
+/* Header Styling */
+.calculator-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00bcd4;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Result Display */
+#result {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+    background: #2d3748;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Button Styling */
+button {
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Default Button Colors */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+button:nth-child(n) {
+    background: #394867;
+    color: white;
+}
+
+/* Specific Button Colors */
+.action-btn {
+    background: #e94560;
+    color: white;
+}
+
+.action-btn:hover {
+    background: #d93856;
+}
+
+.operator-btn {
+    background: #1b9aaa;
+    color: white;
+}
+
+.operator-btn:hover {
+    background: #168d99;
+}
+
+.equals-btn {
+    background: #28a745;
+    color: white;
+    grid-column: span 2;
+}
+
+.equals-btn:hover {
+    background: #218838;
+}
